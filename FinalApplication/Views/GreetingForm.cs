@@ -45,7 +45,7 @@ namespace FinalApplication
         /// <param name="e"></param>
         private void btnContinue_Click(object sender, EventArgs e)
         {
-
+            _controller.DisplayMainMenuScreen();
         }
 
         #endregion

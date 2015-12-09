@@ -11,6 +11,7 @@ namespace FinalApplication
     {
         #region [ FIELDS ]
 
+        private Form _currentForm;
 
         #endregion
 
@@ -23,8 +24,13 @@ namespace FinalApplication
 
         //  Start Greeting Screen Form
         public void DisplayGreetingScreen()
-        { 
-            Application.Run(new GreetingForm(this));
+        {
+            if (_currentForm != null)
+            {
+                _currentForm.Hide();
+                _currentForm = new GreetingForm(this);
+                _currentForm.Show();
+            }
         }
 
         //  Exit the Application
@@ -34,11 +40,16 @@ namespace FinalApplication
         }
 
         //  Start the Main Menu Form
-        public void DisplayMainMenyScreen()
+        public void DisplayMainMenuScreen()
         {
-
+            if (_currentForm != null)
+            {
+                _currentForm.Hide();
+                _currentForm = new MainMenuForm(this);
+                _currentForm.Show();
+            }
         }
-        
+
 
         #endregion
 
@@ -47,7 +58,8 @@ namespace FinalApplication
         //  Default constructor
         public Controller()
         {
-
+            _currentForm = new GreetingForm(this);
+            Application.Run(_currentForm);
         }
 
         #endregion
