@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FinalApplication
 {
@@ -20,11 +21,21 @@ namespace FinalApplication
 
         #region [ METHODS ]
 
+        //  Start Main Menu Form
+        public void DisplayGreetingScreen()
+        { 
+            Application.Run(new GreetingForm());
+        }
 
         #endregion
 
         #region [ CONSTRUCTORS ]
 
+        //  Default constructor
+        public Controller()
+        {
+
+        }
 
         #endregion
     }

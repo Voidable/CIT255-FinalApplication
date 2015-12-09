@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace FinalApplication
 {
-    public partial class MainMenuForm : Form
+    public partial class GreetingForm : Form
     {
 
 
@@ -31,7 +31,7 @@ namespace FinalApplication
 
         #region [ CONSTRUCTORS ]
 
-        public MainMenuForm()
+        public GreetingForm()
         {
             InitializeComponent();
         }

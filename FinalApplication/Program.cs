@@ -14,9 +14,10 @@ namespace FinalApplication
         [STAThread]
         static void Main()
         {
+            // I think it would be best to leave these two lines active.
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenuForm());
+            //Application.Run(new MainMenuForm());
         }
     }
 }
