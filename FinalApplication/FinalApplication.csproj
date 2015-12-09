@@ -45,11 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Controller.cs" />
-    <Compile Include="Views\MainMenuForm.cs">
+    <Compile Include="Views\GreetingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainMenuForm.Designer.cs">
-      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    <Compile Include="Views\GreetingForm.Designer.cs">
+      <DependentUpon>GreetingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Game.cs" />
     <Compile Include="Program.cs" />
@@ -63,8 +63,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\MainMenuForm.resx">
-      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\GreetingForm.resx">
+      <DependentUpon>GreetingForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

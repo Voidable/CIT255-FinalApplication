@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace FinalApplication
 {
-    class Controller
+    public class Controller
     {
         #region [ FIELDS ]
 
@@ -21,11 +21,24 @@ namespace FinalApplication
 
         #region [ METHODS ]
 
-        //  Start Main Menu Form
+        //  Start Greeting Screen Form
         public void DisplayGreetingScreen()
         { 
-            Application.Run(new GreetingForm());
+            Application.Run(new GreetingForm(this));
         }
+
+        //  Exit the Application
+        public void CloseApplication()
+        {
+            Application.Exit();
+        }
+
+        //  Start the Main Menu Form
+        public void DisplayMainMenyScreen()
+        {
+
+        }
+        
 
         #endregion
 

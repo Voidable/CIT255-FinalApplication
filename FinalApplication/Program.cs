@@ -18,6 +18,12 @@ namespace FinalApplication
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainMenuForm());
+
+            //  Create Controller
+            Controller controller = new Controller();
+
+            //  Start program at greeting screen
+            controller.DisplayGreetingScreen();
         }
     }
 }

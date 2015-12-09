@@ -16,6 +16,8 @@ namespace FinalApplication
 
         #region [ FIELDS ]
 
+        //  Holder to reference its controller
+        private Controller _controller;
 
         #endregion
 
@@ -26,6 +28,25 @@ namespace FinalApplication
 
         #region [ METHODS ]
 
+        /// <summary>
+        /// Button to Exit the program
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            _controller.CloseApplication();
+        }
+
+        /// <summary>
+        /// Button to continue to main menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #endregion
 
@@ -36,6 +57,15 @@ namespace FinalApplication
             InitializeComponent();
         }
 
+        public GreetingForm(Controller controller)
+        {
+            InitializeComponent();
+            _controller = controller;
+        }
+
+
         #endregion
+
+
     }
 }

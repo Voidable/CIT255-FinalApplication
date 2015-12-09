@@ -71,6 +71,7 @@
             this.btnContinue.TabIndex = 3;
             this.btnContinue.Text = "Continue";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // btnExit
             // 
@@ -81,8 +82,9 @@
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // MainMenuForm
+            // GreetingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,7 +96,7 @@
             this.Controls.Add(this.lblGreeting);
             this.MaximumSize = new System.Drawing.Size(700, 300);
             this.MinimumSize = new System.Drawing.Size(400, 200);
-            this.Name = "MainMenuForm";
+            this.Name = "GreetingForm";
             this.Text = "Main Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
