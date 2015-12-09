@@ -12,9 +12,30 @@ namespace FinalApplication
 {
     public partial class MainMenuForm : Form
     {
+
+
+        #region [ FIELDS ]
+
+
+        #endregion
+
+        #region [ PROPERTIES ]
+
+
+        #endregion
+
+        #region [ METHODS ]
+
+
+        #endregion
+
+        #region [ CONSTRUCTORS ]
+
         public MainMenuForm()
         {
             InitializeComponent();
         }
+
+        #endregion
     }
 }
