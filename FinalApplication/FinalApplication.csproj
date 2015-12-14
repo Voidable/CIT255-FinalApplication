@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="DAL\GameRepository.cs" />
+    <Compile Include="Data\DataSettings.cs" />
+    <Compile Include="Data\InitializeDataFile.cs" />
     <Compile Include="Views\GreetingForm.cs">
       <SubType>Form</SubType>
     </Compile>

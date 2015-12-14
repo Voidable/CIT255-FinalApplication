@@ -9,7 +9,7 @@ namespace FinalApplication
     /// <summary>
     /// Class to define a video game for storage.
     /// </summary>
-    class Game
+    public class Game
     {
         #region [ ENUMS ]
 
@@ -168,6 +168,28 @@ namespace FinalApplication
             _platformPC = true;
             _platformXB = true;
             _platformPS = true;
+        }
+
+        /// <summary>
+        /// Overloaded constructor, allows all values to be set
+        /// </summary>
+        public Game(int id, string name, string dev, string pub, ESRBRatings rating, DateTime release, double unitsSold, bool PC, bool XB, bool PS)
+        {
+            _ID = id;
+
+            _name = name;
+            _developer = dev;
+            _publisher = pub;
+
+            _contentRating = rating;
+
+            _releaseDate = release;
+
+            _unitsSold = unitsSold;
+
+            _platformPC = PC;
+            _platformXB = XB;
+            _platformPS = PS;
         }
 
         #endregion
