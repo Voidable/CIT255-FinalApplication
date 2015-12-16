@@ -146,6 +146,16 @@ namespace FinalApplication
 
         #endregion
 
+        #region [ METHODS ]
+
+        public string SummaryString()
+        {
+            return string.Format("ID: " + _ID.ToString().PadRight(3) + " Name: " + _name.PadRight(30).Substring(0, 30) + " Developer: " + _developer.PadRight(20).Substring(0,20));
+        }
+
+
+        #endregion
+
         #region [ CONSTRUCTORS ]
 
         /// <summary>

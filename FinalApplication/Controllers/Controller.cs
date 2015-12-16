@@ -12,6 +12,7 @@ namespace FinalApplication
         #region [ FIELDS ]
 
         private Form _currentForm;
+        private GameRepository repository;
 
         #endregion
 
@@ -48,9 +49,40 @@ namespace FinalApplication
                 _currentForm = new MainMenuForm(this);
                 _currentForm.Show();
             }
+
         }
 
+        public List<Game> GetGamesList()
+        {
+            using (repository = new GameRepository())
+            {
+                return repository.SelectAllGames();
+            }
+        }
 
+        public void UpdateGame(int ID, Game game)
+        {
+            using (repository = new GameRepository())
+            {
+                repository.UpdateGame(ID, game);
+            }
+        }
+
+        public void InsertGame(Game game)
+        {
+            using (repository = new GameRepository())
+            {
+                repository.InsertGame(game);
+            }
+        }
+
+        public void DeleteRecord(int ID)
+        {
+            using (repository = new GameRepository())
+            {
+                repository.DeleteGame(ID);
+            }
+        }
         #endregion
 
         #region [ CONSTRUCTORS ]

@@ -19,6 +19,9 @@ namespace FinalApplication
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainMenuForm());
 
+            //  Initialize Data
+            InitializeDataFile.AddTestData();
+
             //  Create Controller
             Controller controller = new Controller();
 

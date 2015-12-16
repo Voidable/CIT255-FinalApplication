@@ -97,7 +97,8 @@
             this.MaximumSize = new System.Drawing.Size(700, 300);
             this.MinimumSize = new System.Drawing.Size(400, 200);
             this.Name = "GreetingForm";
-            this.Text = "Main Menu";
+            this.Text = "Greetings!";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GreetingForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

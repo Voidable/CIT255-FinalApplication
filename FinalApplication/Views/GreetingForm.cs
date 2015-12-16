@@ -19,6 +19,8 @@ namespace FinalApplication
         //  Holder to reference its controller
         private Controller _controller;
 
+        private bool closeApplication = true;
+
         #endregion
 
         #region [ PROPERTIES ]
@@ -46,6 +48,7 @@ namespace FinalApplication
         private void btnContinue_Click(object sender, EventArgs e)
         {
             _controller.DisplayMainMenuScreen();
+            closeApplication = false;
         }
 
         #endregion
@@ -64,8 +67,15 @@ namespace FinalApplication
         }
 
 
+
         #endregion
 
-
+        private void GreetingForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (closeApplication)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
